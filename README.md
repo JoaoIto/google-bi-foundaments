@@ -1,5 +1,15 @@
 # Google Data Analytics: Business Intelligence - Projeto Final (Google Fiber)
 
+<div align="center">
+  <a href="https://coursera.org/verify/O3KJO7CXWBTA">
+    <img src="./certificado.png" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
+  </a>
+  <br>
+  <i><b>Certificado Oficial:</b> <a href="https://coursera.org/verify/O3KJO7CXWBTA">Foundations of Business Intelligence (autorizado pelo Google)</a> - Concluído por <b>João Victor Póvoa França</b>.</i>
+</div>
+
+---
+
 Este repositório contém a documentação e os requisitos de negócios para o projeto final (fictício) do Certificado Profissional de Business Intelligence do Google. Neste cenário, atuamos como um analista de BI fazendo uma entrevista para a equipe de atendimento ao cliente do Google Fiber.
 
 ## Visão Geral do Cenário
