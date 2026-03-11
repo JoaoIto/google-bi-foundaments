@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://coursera.org/verify/O3KJO7CXWBTA">
-    <img src="./certificado.png" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
+    <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/docs/certificado.png?raw=true" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
   </a>
   <br>
   <i><b>Certificado Oficial:</b> <a href="https://coursera.org/verify/O3KJO7CXWBTA">Foundations of Business Intelligence (autorizado pelo Google)</a> - Concluído por <b>João Victor Póvoa França</b>.</i>
