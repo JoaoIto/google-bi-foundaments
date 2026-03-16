@@ -28,6 +28,7 @@ Aqui estão os documentos consolidados do projeto, organizados para visualizaç�
 | **Estratégia de BI** | Planejamento de Captura, Análise e Monitoramento. | [📂 Visualizar PDF](./outputs/Strategy-Document-Google-Fiber.pdf) |
 | **Dataset Sintético (CSV)** | Dados simulados (10k registros) para a análise. | [📊 Baixar CSV](./outputs/google_fiber_data.csv) |
 | **Dashboard de Análise** | Notebook Jupyter para execução no Google Colab. | [💻 Abrir Notebook](./src/Google_Fiber_Analysis.ipynb) |
+| **Relatório de Insights** | Análise detalhada dos resultados e tendências. | [📝 Ler Insights](./outputs/Dashboard_Insights.md) |
 
 ---
 
@@ -50,6 +51,46 @@ O plano detalha como os dados serão coletados, limpos e visualizados para gerar
 ### 🔹 Etapa 4: Dashboard Interativo (Python & Plotly)
 Implementação técnica dos gráficos interativos usando o Google Colab para visualizar tendências de chamadas repetidas.
 *   *Notebook:* [Google_Fiber_Analysis.ipynb](./src/Google_Fiber_Analysis.ipynb)
+
+---
+
+## 📊 Dashboard & Insights Analytics
+
+Abaixo, apresentamos os principais indicadores gerados pela nossa ferramenta de BI, traduzindo dados em decisões estratégicas:
+
+<div align="center">
+  <h3>1️⃣ Taxa de Repetição Mensal</h3>
+  <img src="./outputs/grafico1-agregacoes-tri.png" width="800">
+  <p><i>Monitoramento da eficácia na resolução do primeiro contato. Picos indicam sazonalidade ou falhas em novos processos.</i></p>
+</div>
+
+<br>
+
+<div align="center">
+  <h3>2️⃣ Mercado vs Tipo de Problema</h3>
+  <img src="./outputs/grafico2-Market-Problem-Type.png" width="800">
+  <p><i>Identificação de gargalos regionais. Problemas de WiFi e Suporte Técnico são as maiores causas de retornos.</i></p>
+</div>
+
+<br>
+
+<div align="center">
+  <h3>3️⃣ Concentração de Chamadas (Heatmap)</h3>
+  <img src="./outputs/grafico3-heatmap.png" width="800">
+  <p><i>Visão holística do volume por categoria, destacando áreas que exigem maior alocação de recursos.</i></p>
+</div>
+
+<br>
+
+<div align="center">
+  <h3>4️⃣ Performance Trimestral para Liderança</h3>
+  <img src="./outputs/grafico4-performance-trimestral.png" width="800">
+  <p><i>Métrica de sucesso para stakeholders (Emma e Keith), comparando volume total vs resoluções pendentes.</i></p>
+</div>
+
+<br>
+
+> 💡 **Clique aqui para ler a análise completa de cada gráfico:** [📂 Relatório de Insights Detalhado](./outputs/Dashboard_Insights.md)
 
 ---
 
