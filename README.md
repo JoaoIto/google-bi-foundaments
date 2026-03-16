@@ -24,7 +24,10 @@ Aqui estão os documentos consolidados do projeto, organizados para visualizaç�
 | Documento | Descrição | Link de Acesso |
 | :--- | :--- | :--- |
 | **Requisitos de Stakeholders** | Definição do problema, partes interessadas e métricas. | [📂 Visualizar PDF](./outputs/Stakeholder-Requirements-Google-Fiber.pdf) |
-| **Certificado de Conclusão** | Validação oficial da Google/Coursera. | [📜 Visualizar PDF](./outputs/Certificado-Google-BI.pdf) |
+| **Requisitos do Projeto** | Tradução técnica e critérios de sucesso SMART. | [📂 Visualizar PDF](./outputs/Project-Requirements-Document-Google-Fiber.pdf) |
+| **Estratégia de BI** | Planejamento de Captura, Análise e Monitoramento. | [📂 Visualizar PDF](./outputs/Strategy-Document-Google-Fiber.pdf) |
+| **Dataset Sintético (CSV)** | Dados simulados (10k registros) para a análise. | [📊 Baixar CSV](./outputs/google_fiber_data.csv) |
+| **Dashboard de Análise** | Notebook Jupyter para execução no Google Colab. | [💻 Abrir Notebook](./src/Google_Fiber_Analysis.ipynb) |
 
 ---
 
@@ -34,15 +37,19 @@ O projeto seguiu a metodologia oficial da Google, dividida em etapas estratégic
 
 ### 🔹 Etapa 1: Análise e Stakeholders
 Identificação das necessidades de Emma Santiago (Hiring Manager) e Keith Portone (Project Manager). O foco foi reduzir o volume de chamadas em 3 mercados principais.
-*   *Output:* [Documento de Requisitos (PDF)](./outputs/Stakeholder-Requirements-Google-Fiber.pdf)
+*   *Output:* [Stakeholder Requirements (PDF)](./outputs/Stakeholder-Requirements-Google-Fiber.pdf)
 
 ### 🔹 Etapa 2: Requisitos do Projeto & Estratégia
 Tradução de necessidades em requisitos técnicos (janela de 7 dias, métricas de resolução no primeiro contato).
-*   *Output:* [Documento de Requisitos (PDF)](./outputs/Project-Requirements-Document-Google-Fiber.pdf)
+*   *Output:* [Project Requirements (PDF)](./outputs/Project-Requirements-Document-Google-Fiber.pdf)
 
 ### 🔹 Etapa 3: Documento de Estratégia (Capturar, Analisar, Monitorar)
 O plano detalha como os dados serão coletados, limpos e visualizados para gerar insights acionáveis.
-*   *Output:* [Documento de Estratégia (PDF)](./outputs/Strategy-Document-Google-Fiber.pdf)
+*   *Output:* [Strategy Document (PDF)](./outputs/Strategy-Document-Google-Fiber.pdf)
+
+### 🔹 Etapa 4: Dashboard Interativo (Python & Plotly)
+Implementação técnica dos gráficos interativos usando o Google Colab para visualizar tendências de chamadas repetidas.
+*   *Notebook:* [Google_Fiber_Analysis.ipynb](./src/Google_Fiber_Analysis.ipynb)
 
 ---
 
