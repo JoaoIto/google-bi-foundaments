@@ -38,7 +38,7 @@ Identificação das necessidades de Emma Santiago (Hiring Manager) e Keith Porto
 
 ### 🔹 Etapa 2: Requisitos do Projeto & Estratégia
 Tradução de necessidades em requisitos técnicos (janela de 7 dias, métricas de resolução no primeiro contato).
-*   *Draft de Planejamento:* [Project_Requirements.md](./templates/Google_Fiber/Project_Requirements.md)
+*   *Output:* [Documento de Requisitos (PDF)](./outputs/Stakeholder-Requirements-Google-Fiber.pdf)
 
 ### 🔹 Etapa 3: Documento de Estratégia (Capturar, Analisar, Monitorar)
 *Em desenvolvimento.* O plano detalha como os dados serão coletados, limpos e visualizados para gerar insights acionáveis.
