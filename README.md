@@ -1,109 +1,48 @@
-# 📡 Google Fiber: Business Intelligence Case Study
+# 🎓 Google Business Intelligence Professional Certificate
 
 <div align="center">
   <a href="https://coursera.org/verify/O3KJO7CXWBTA">
     <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/assets/certificado.png?raw=true" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
   </a>
-  <br>
-  <i><b>Certificado Oficial:</b> <a href="https://coursera.org/verify/O3KJO7CXWBTA">Foundations of Business Intelligence (Google)</a></i>
-  <br>
-  <p>Concluído por <b>João Victor Póvoa França</b></p>
+  <p><i>Repositório Oficial de Estudos e Portfólio - Desenvolvido por <b>João Victor Póvoa França</b></i></p>
 </div>
 
 ---
 
-## 📝 Visão Geral do Projeto
-Este repositório apresenta o planejamento e os requisitos de BI para o caso de estudo do **Google Fiber**. O objetivo principal foi atuar como um Analista de BI para resolver o desafio de **chamadas repetidas de suporte**, transformando necessidades de negócios em documentação técnica e estratégica.
+## 🚀 Sobre este Repositório
+
+Este repositório centraliza todos os projetos, documentações e anotações técnicas desenvolvidas durante o **Google Business Intelligence Professional Certificate**. A formação prepara profissionais de dados para coletar, estruturar, analisar e visualizar informações para a tomada de decisões de negócios.
+
+O repositório está dividido nos módulos práticos da formação, seguindo a jornada do analista de BI desde o levantamento de requisitos até a modelagem e criação de dashboards.
 
 ---
 
-## 🚀 Entregáveis Finais (Foco em Resultados)
+## 📁 Estrutura da Formação (Cursos e Projetos)
 
-Aqui estão os documentos consolidados do projeto, organizados para visualização rápida:
+### 1️⃣ Curso 1: Fundamentos de Business Intelligence (Google Fiber)
+Neste primeiro módulo, atuamos como um analista de BI em uma simulação para a equipe do **Google Fiber**, traduzindo necessidades de stakeholders em requisitos técnicos e painéis interativos focados na resolução de problemas de clientes e na redução de chamadas no suporte.
+*   **Status:** ✅ Concluído
+*   **Projeto Principal:** Dashboard de Análise de Suporte Técnico (Python/Plotly).
+*   👉 **[Acessar o Projeto Completo](./google-fiber-bi/README.md)**
 
-| Documento | Descrição | Link de Acesso |
-| :--- | :--- | :--- |
-| **Requisitos de Stakeholders** | Definição do problema, partes interessadas e métricas. | [📂 Visualizar PDF](./outputs/Stakeholder-Requirements-Google-Fiber.pdf) |
-| **Requisitos do Projeto** | Tradução técnica e critérios de sucesso SMART. | [📂 Visualizar PDF](./outputs/Project-Requirements-Document-Google-Fiber.pdf) |
-| **Estratégia de BI** | Planejamento de Captura, Análise e Monitoramento. | [📂 Visualizar PDF](./outputs/Strategy-Document-Google-Fiber.pdf) |
-| **Dataset Sintético (CSV)** | Dados simulados (10k registros) para a análise. | [📊 Baixar CSV](./outputs/google_fiber_data.csv) |
-| **Dashboard de Análise** | Notebook Jupyter para execução no Google Colab. | [💻 Abrir Notebook](./src/Google_Fiber_Analysis.ipynb) |
-| **Relatório de Insights** | Análise detalhada dos resultados e tendências. | [📝 Ler Insights](./outputs/Dashboard_Insights.md) |
-
----
-
-## 🛠️ Jornada de Desenvolvimento (Framework Google BI)
-
-O projeto seguiu a metodologia oficial da Google, dividida em etapas estratégicas:
-
-### 🔹 Etapa 1: Análise e Stakeholders
-Identificação das necessidades de Emma Santiago (Hiring Manager) e Keith Portone (Project Manager). O foco foi reduzir o volume de chamadas em 3 mercados principais.
-*   *Output:* [Stakeholder Requirements (PDF)](./outputs/Stakeholder-Requirements-Google-Fiber.pdf)
-
-### 🔹 Etapa 2: Requisitos do Projeto & Estratégia
-Tradução de necessidades em requisitos técnicos (janela de 7 dias, métricas de resolução no primeiro contato).
-*   *Output:* [Project Requirements (PDF)](./outputs/Project-Requirements-Document-Google-Fiber.pdf)
-
-### 🔹 Etapa 3: Documento de Estratégia (Capturar, Analisar, Monitorar)
-O plano detalha como os dados serão coletados, limpos e visualizados para gerar insights acionáveis.
-*   *Output:* [Strategy Document (PDF)](./outputs/Strategy-Document-Google-Fiber.pdf)
-
-### 🔹 Etapa 4: Dashboard Interativo (Python & Plotly)
-Implementação técnica dos gráficos interativos usando o Google Colab para visualizar tendências de chamadas repetidas.
-*   *Notebook:* [Google_Fiber_Analysis.ipynb](./src/Google_Fiber_Analysis.ipynb)
+### 2️⃣ Curso 2: Modelagem de Dados, Pipelines e Insights
+O segundo módulo aprofunda-se na engenharia dos dados. Foca em como planejar bancos de dados e aplicar *Design Patterns* de BI (como Esquema Estrela e Floco de Neve) para tornar o armazenamento otimizado para consultas analíticas pesadas.
+*   **Status:** 🚧 Em Progresso
+*   **Documentação Atual:** Introdução aos Design Patterns e Schemas.
+*   👉 **[Acessar a Documentação Técnica](./data-models-pipelines-insights/README.md)**
 
 ---
 
-## 📊 Dashboard & Insights Analytics
+## 🛠️ Tecnologias e Ferramentas Utilizadas
 
-Abaixo, apresentamos os principais indicadores gerados pela nossa ferramenta de BI, traduzindo dados em decisões estratégicas:
-
-<div align="center">
-  <h3>1️⃣ Taxa de Repetição Mensal</h3>
-  <img src="./outputs/grafico1-agregacoes-tri.png" width="800">
-  <p><i>Monitoramento da eficácia na resolução do primeiro contato. Picos indicam sazonalidade ou falhas em novos processos.</i></p>
-</div>
-
-<br>
-
-<div align="center">
-  <h3>2️⃣ Mercado vs Tipo de Problema</h3>
-  <img src="./outputs/grafico2-Market-Problem-Type.png" width="800">
-  <p><i>Identificação de gargalos regionais. Problemas de WiFi e Suporte Técnico são as maiores causas de retornos.</i></p>
-</div>
-
-<br>
-
-<div align="center">
-  <h3>3️⃣ Concentração de Chamadas (Heatmap)</h3>
-  <img src="./outputs/grafico3-heatmap.png" width="800">
-  <p><i>Visão holística do volume por categoria, destacando áreas que exigem maior alocação de recursos.</i></p>
-</div>
-
-<br>
-
-<div align="center">
-  <h3>4️⃣ Performance Trimestral para Liderança</h3>
-  <img src="./outputs/grafico4-performance-trimestral.png" width="800">
-  <p><i>Métrica de sucesso para stakeholders (Emma e Keith), comparando volume total vs resoluções pendentes.</i></p>
-</div>
-
-<br>
-
-> 💡 **Clique aqui para ler a análise completa de cada gráfico:** [📂 Relatório de Insights Detalhado](./outputs/Dashboard_Insights.md)
+No decorrer destes projetos, aplicamos as seguintes tecnologias:
+- **Linguagens:** Python (Pandas, Numpy), SQL.
+- **Visualização de Dados:** Plotly (Interatividade), Dashboards teóricos em Looker/Tableau.
+- **Engenharia de Dados:** Modelagem Relacional e Dimensional (Star Schema, Snowflake Schema).
+- **Processos de BI:** Levantamento de Requisitos (Stakeholders, Documento de Estratégia), ETL e Data Cleaning.
 
 ---
 
-## 📂 Organização do Repositório
-
-```bash
-├── outputs/          # Documentos finais e PDFs prontos para visualização
-├── templates/        # Modelos e rascunhos de planejamento (MD/DOCX)
-├── assets/           # Imagens e recursos visuais do projeto
-└── README.md         # Vitrine do portfólio
-```
-
----
 <div align="center">
-  <sub>Projeto desenvolvido como parte do Google Business Intelligence Professional Certificate.</sub>
+  <sub>Documentação desenvolvida com base na currícula oficial da <a href="https://www.coursera.org/professional-certificates/google-business-intelligence">Certificação Profissional do Google em BI</a>.</sub>
 </div>
