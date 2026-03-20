@@ -2,7 +2,7 @@
 
 <div align="center">
   <a href="https://coursera.org/verify/O3KJO7CXWBTA">
-    <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/assets/certificado.png?raw=true" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
+    <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/google-fiber-bi/assets/certificado.png?raw=true" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
   </a>
   <br>
   <i><b>Certificado Oficial:</b> <a href="https://coursera.org/verify/O3KJO7CXWBTA">Foundations of Business Intelligence (Google)</a></i>
