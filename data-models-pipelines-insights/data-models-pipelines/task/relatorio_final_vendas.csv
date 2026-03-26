@@ -1,0 +1,4 @@
+categoria,qtd_pedidos,faturamento_total,imposto
+Hardware,2,10500.0,1050.0
+Monitor,2,2400.0,240.0
+Periférico,3,1750.0,175.0
