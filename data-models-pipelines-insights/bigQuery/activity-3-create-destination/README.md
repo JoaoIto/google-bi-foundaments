@@ -1,45 +1,73 @@
 # Atividade 3: Unificar Dados com Tabelas de Destino
 
-Esta atividade aprofunda o conceito de **Tabelas de Destino** e como elas são essenciais para unificar dados de múltiplas fontes em um ambiente de BI.
+Esta atividade foca em um estágio crítico do pipeline de BI: a **Extração** e o uso de **Tabelas de Destino** para unificar e processar dados brutos em informações acionáveis.
 
 ---
 
-## 🏗️ O que são Tabelas de Destino?
-
-As tabelas de destino são locais predeterminados para onde os dados do pipeline são enviados após a extração.
-- **Tabela de Origem:** De onde os dados vêm (ex: bancos de dados SQL, SaaS, Planilhas).
-- **Tabela de Destino:** Para onde os dados vão (ex: BigQuery, Dataflow) para serem transformados ou analisados.
-
-A unificação em uma tabela de destino permite que os profissionais de BI tenham uma "versão única da verdade", facilitando a criação de dashboards e relatórios precisos.
+## 🏗️ Visão Geral
+Como profissional de BI, você usa tabelas de destino como locais predeterminados para consolidar dados vindos de diversas fontes. Isso permite que a equipe de BI processe e limpe os dados antes de servirem como base para dashboards e tomadores de decisão.
 
 ---
 
-## 📤 Processo de Extração de Dados
+## 🚩 Cenário: Consultoria para o Gabinete do Prefeito de São Francisco
+O Prefeito de São Francisco planeja lançar um **Programa Anual de Valorização das Árvores**, que decorará as árvores das ruas da cidade. Para isso, o gabinete precisa de uma lista dos **10 principais endereços com maior densidade de árvores**.
 
-A extração de dados é a primeira etapa de um pipeline **ETL** (Extrair, Transformar, Carregar). Existem três métodos principais:
+### Objetivo do BI:
+- Localizar árvores maduras em endereços específicos.
+- Prover dados para planejamento de suprimentos (decorações) e logística de limpeza após o evento.
 
-1.  **Notificação de Atualização:** O sistema de origem emite um alerta quando um registro muda, iniciando a extração automaticamente.
-2.  **Extração Incremental:** O sistema identifica apenas as alterações desde a última carga, sendo mais eficiente para grandes volumes.
-3.  **Extração Completa:** Toda a tabela de origem é copiada para o destino.
+### O Dataset: `San Francisco Street Trees`
+Disponível publicamente no BigQuery, este dataset contém mais de 190.000 linhas de dados históricos (desde 1955) sobre as árvores mantidas pelo Departamento de Obras Públicas, incluindo IDs únicos, localizações exatas e coordenadas geográficas.
 
 ---
 
-## 🌳 Exemplo Prático: Árvores de São Francisco (CSV)
+## 🛠️ Passo a Passo da Execução
 
-Nesta pasta, você encontrará o arquivo CSV resultante da consulta realizada no BigQuery sobre as árvores de rua em São Francisco.
+1.  **Acesse o Console:** Abra o [BigQuery Studio](https://console.cloud.google.com/bigquery).
+2.  **Adicione Dados Públicos:**
+    - Clique em **`+ ADICIONAR`** no menu Explorer.
+    - Selecione **`Conjuntos de dados públicos`**.
+    - Pesquise por "San Francisco Street Trees" e selecione "View Dataset".
+3.  **Execute a Consulta:** Use o arquivo de consulta localizado em [`data/querySanFrancisco.sql`](./data/querySanFrancisco.sql).
+4.  **Salve os Resultados:** Após a execução, clique em **`SALVAR RESULTADOS`** e escolha **`CSV (arquivo local)`**.
 
-### Dados Extraídos:
-O arquivo contém as 10 localizações com maior número de árvores. Os top 5 endereços são:
-- **100x Cargo Way:** 135 árvores
-- **700 Junipero Serra Blvd:** 125 árvores
-- **1000 San Jose Ave:** 113 árvores
-- **1200 Sunset Blvd:** 110 árvores
-- **1600 Sunset Blvd:** 102 árvores
+---
 
-### Por que isso é importante?
-Ao mover esses dados de uma fonte pública imensa para sua própria tabela de destino (e exportá-los para CSV), você transformou dados brutos em informação acionável que pode ser lida por outras ferramentas como Python, Looker ou Excel.
+## 📊 Análise da Consulta SQL
+
+```sql
+SELECT
+    address,
+    COUNT(address) AS number_of_trees
+FROM
+    `bigquery-public-data.san_francisco_trees.street_trees`
+WHERE
+    address != "null"
+GROUP BY address
+ORDER BY number_of_trees DESC
+LIMIT 10;
+```
+
+### Explicação das Cláusulas:
+- **SELECT INTO**: Seleciona os endereços e utiliza `COUNT()` para quantificar as árvores em cada local.
+- **WHERE**: Garante que endereços nulos sejam excluídos da lista oficial.
+- **GROUP BY / ORDER BY**: Agrupa os resultados por localidade e os organiza do maior para o menor número de árvores.
+- **LIMIT 10**: Restringe as top 10 localidades prioritárias para o evento.
+
+---
+
+## 🏁 Resultados e Recomendações de BI
+
+Os dados extraídos foram salvos no link abaixo:
+👉 **[Ver Resultados CSV (Exportados)](./data/bq-results-sanfrancisco-trees.csv)**
+
+### Próximos Passos (Estratégicos):
+Para agregar valor real ao trabalho do prefeito, um profissional de BI deve recomendar:
+1.  **Painel de Controle:** Visualização dos endereços com as árvores mais adequadas para decoração.
+2.  **Gerenciamento de Suprimentos:** Estimativa exata de materiais com base no `number_of_trees`.
+3.  **Logística Eficiente:** Planejamento de rotas de decoração e limpeza para otimizar o tempo das equipes urbanas.
 
 ---
 
 > [!NOTE]
-> Você pode consultar o arquivo CSV local nesta pasta: `SanFranciscoTrees.csv.csv`
+> Os dados desta atividade foram fornecidos pelo portal oficial [data.sfgov.org](https://data.sfgov.org/).
