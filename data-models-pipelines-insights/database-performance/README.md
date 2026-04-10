@@ -32,6 +32,8 @@ A compreensão dos cinco fatores é o primeiro passo. Para garantir que um banco
 
 👉 **[Explorar Métodos e Técnicas de Otimização de Leitura (Índices, Partições, Cache e Consultas)](./optimization-techniques/README.md)**
 
+👉 **[Estudo de Caso: Otimização no Serviço Meteorológico (Aplicação Prática)](./case-study.md)**
+
 ---
 
 ## 4. Conclusão
