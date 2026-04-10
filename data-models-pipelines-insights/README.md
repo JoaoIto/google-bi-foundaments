@@ -19,6 +19,7 @@ Abaixo estão os tópicos navegáveis deste módulo, organizados por área de co
 ### 3️⃣ Modelagem e Arquitetura
 - **[Database Schemas](./database-schemas/readme.md)**: Exploração de esquemas Star, Snowflake e modelagem relacional.
 - **[Tipos de Dados](./type-of-data/README.md)**: Documentação sobre categorias de dados em BI.
+- **[Otimização e Desempenho (Performance)](./database-performance/README.md)**: Documentação abrangente sobre os 5 fatores que afetam diretamente o desempenho do banco de dados (Carga de trabalho, Taxa de transferência, Recursos, Otimização e Contenção).
 
 ---
 
