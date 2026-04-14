@@ -23,7 +23,7 @@ O repositório está dividido nos módulos práticos da formação, seguindo a j
 Neste primeiro módulo, atuamos como um analista de BI em uma simulação para a equipe do **Google Fiber**, traduzindo necessidades de stakeholders em requisitos técnicos e painéis interativos focados na resolução de problemas de clientes e na redução de chamadas no suporte.
 * **Status:** Concluído
 * **Projeto Principal:** Dashboard de Análise de Suporte Técnico (Python/Plotly).
-* **[Acessar o Projeto Completo](./google-fiber-bi/README.md)**
+* **[Acessar o Projeto Completo](./foundaments-bi/README.md)**
 
 ### 2 Curso 2: Modelagem de Dados, Pipelines e Insights
 O segundo módulo aprofunda-se na engenharia dos dados. Foca em como planejar bancos de dados e aplicar *Design Patterns* de BI (como Esquema Estrela e Floco de Neve) para tornar o armazenamento otimizado para consultas analíticas pesadas.
