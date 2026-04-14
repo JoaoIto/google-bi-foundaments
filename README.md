@@ -43,15 +43,22 @@ O segundo módulo aprofunda-se na engenharia dos dados. Foca em como planejar ba
 * **[Acessar Projeto Final: Google Fiber](./data-models-pipelines-insights/final-project-google-fiber/Readme.md)**
 * **[Acessar a Documentação Técnica](./data-models-pipelines-insights/README.md)**
 
+### 3 Curso 3: Decisions, Decisions: Dashboards and Reports
+Este módulo final foca na entrega de valor através da visualização. Aprendemos a criar dashboards dinâmicos, aplicar princípios de design para clareza visual e comunicar insights técnicos para tomadores de decisão não técnicos.
+* **Status:** Em Andamento 🏗️
+* **Projeto Principal:** Mockups e Dashboard Capstone (Tableau).
+* **[Acessar a Documentação Técnica](./dashboards-reports-decisions/README.md)**
+
 ---
 
 ## Tecnologias e Ferramentas Utilizadas
 
 No decorrer destes projetos, aplicamos as seguintes tecnologias:
-- **Linguagens:** Python (Pandas, Numpy), SQL.
-- **Visualização de Dados:** Plotly (Interatividade), Dashboards teóricos em Looker/Tableau.
-- **Engenharia de Dados:** Modelagem Relacional e Dimensional (Star Schema, Snowflake Schema).
-- **Processos de BI:** Levantamento de Requisitos (Stakeholders, Documento de Estratégia), ETL e Data Cleaning.
+- **Linguagens:** SQL (BigQuery, Pré-agregação), Python (Análise exploratória).
+- **Visualização de Dados:** Tableau (Interatividade Avançada), Plotly.
+- **Ferramentas de Design:** Mockup Design, Design de Baixa Fidelidade.
+- **Engenharia de Dados:** Modelagem Relacional e Dimensional (Star/Snowflake Schema), Pipelines de ETL.
+- **Processos de BI:** Levantamento de Requisitos, Documentação de Estratégia, Storytelling com Dados.
 
 ---
 
