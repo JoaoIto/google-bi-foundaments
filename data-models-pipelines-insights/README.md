@@ -6,6 +6,8 @@ Este repositório centraliza os estudos, documentações e práticas do segundo 
 
 ## Trilhas de Estudo
 
+Acesse o **[Glossário Técnico do Curso](./glossary.md)** para definições rápidas de termos e conceitos.
+
 Abaixo estão os tópicos navegáveis deste módulo, organizados por área de conhecimento.
 
 ### 1 Engenharia de Pipelines e Processamento
