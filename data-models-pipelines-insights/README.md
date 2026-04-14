@@ -2,6 +2,10 @@
 
 Este repositório centraliza os estudos, documentações e práticas do segundo curso do **Google Business Intelligence Professional Certificate**. O foco aqui é aprofundar-se na engenharia de dados, modelagem dimensional e na construção de pipelines eficientes.
 
+<a href="https://coursera.org/verify/6O7KNFKOXU4W">
+          <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/data-models-pipelines-insights/assets/certificado2.png?raw=true" alt="Certificado 2" width="700">
+        </a>
+
 ---
 
 ## Trilhas de Estudo
