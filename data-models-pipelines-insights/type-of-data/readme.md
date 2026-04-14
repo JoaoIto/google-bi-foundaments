@@ -41,10 +41,10 @@ A forma como processamos esses dados também varia conforme o ambiente:
 
 No curso 2, você verá que o pipeline de BI é o caminho que o dado percorre entre essas estruturas:
 
-1.  **Ingestão:** O dado sai do Banco Relacional ou de um arquivo JSON (Semiestruturado).
-2.  **Staging (Data Lake):** O dado bruto é armazenado para não sobrecarregar a fonte.
-3.  **Transformação (ETL/ELT):** O dado é limpo e modelado (ex: Star Schema).
-4.  **Serviço (Data Warehouse):** O dado limpo está pronto para o dashboard.
+1. **Ingestão:** O dado sai do Banco Relacional ou de um arquivo JSON (Semiestruturado).
+2. **Staging (Data Lake):** O dado bruto é armazenado para não sobrecarregar a fonte.
+3. **Transformação (ETL/ELT):** O dado é limpo e modelado (ex: Star Schema).
+4. **Serviço (Data Warehouse):** O dado limpo está pronto para o dashboard.
 
 > **Dica de Estudo:** No Google Cloud (que é o foco do seu curso), o **BigQuery** atua muitas vezes como um Lakehouse, permitindo consultar dados diretamente do Cloud Storage (Lake) usando SQL.
 

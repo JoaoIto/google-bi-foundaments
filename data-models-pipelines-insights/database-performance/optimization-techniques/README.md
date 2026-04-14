@@ -1,4 +1,4 @@
-# 🛠️ Métodos e Técnicas de Otimização de Leitura
+# Métodos e Técnicas de Otimização de Leitura
 
 A **leitura de dados** é o processo de interpretar e processar informações para torná-las úteis aos usuários. Otimizar esse processo é fundamental para garantir que o sistema de BI responda com a velocidade necessária para a tomada de decisão.
 

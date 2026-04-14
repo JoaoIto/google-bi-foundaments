@@ -17,7 +17,7 @@ Antes de criar qualquer tabela, verifique se esses quatro elementos estão prese
 
 Neste cenário, a engenheira Mia projetou o `sales_warehouse` para suportar o lançamento de um e-commerce. Abaixo, analisamos as decisões estratégicas por trás do design:
 
-### 🌟 Por que o Esquema em Estrela (Star Schema)?
+### Por que o Esquema em Estrela (Star Schema)?
 Mia escolheu o **Esquema em Estrela** porque ele é otimizado para **leitura e performance**. 
 * **Estrutura:** Uma tabela central de **Fatos** (ex: `Sales`) conectada a várias tabelas de **Dimensão** (ex: `Products`, `Users`).
 * **Vantagem:** Consultas mais simples, agregações (Soma, Média) mais rápidas e lógica de relatórios simplificada para o gerente de vendas.
@@ -26,8 +26,8 @@ Mia escolheu o **Esquema em Estrela** porque ele é otimizado para **leitura e p
 
 ### Convenções de Nomenclatura: Snake Case
 A escolha do `snake_case` (ex: `order_id`, `created_at`) não é apenas estética. É um padrão de mercado que:
-1.  Evita problemas com sistemas que diferenciam maiúsculas/minúsculas.
-2.  Melhora a legibilidade para outros analistas e engenheiros.
+1. Evita problemas com sistemas que diferenciam maiúsculas/minúsculas.
+2. Melhora a legibilidade para outros analistas e engenheiros.
 
 ### Precisão Numérica com `DECIMAL(10,2)`
 Para campos financeiros, Mia evitou erros de arredondamento comuns em tipos flutuantes.

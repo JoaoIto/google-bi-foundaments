@@ -1,16 +1,16 @@
-# 🔄 ETL vs ELT: Evolução do Processamento de Dados
+# ETL vs ELT: Evolução do Processamento de Dados
 
 Em Business Intelligence, mover dados de sistemas de origem para destinos analíticos é uma das tarefas mais críticas. Existem duas abordagens principais para construir esses pipelines: **ETL** e **ELT**. Compreender a diferença entre elas é fundamental para otimizar o desempenho e a eficiência da organização.
 
 ---
 
-## 🏗️ Comparação Detalhada: ETL vs ELT
+## Comparação Detalhada: ETL vs ELT
 
 A principal diferença reside na **ordem** em que as transformações ocorrem e na **localização** onde o processamento é executado.
 
 ### Tabela Comparativa
 
-| Característica | 🛠️ ETL (Extract, Transform, Load) | 🚀 ELT (Extract, Load, Transform) |
+| Característica | ETL (Extract, Transform, Load) | ELT (Extract, Load, Transform) |
 | :--- | :--- | :--- |
 | **Ordem dos Processos** | Dados são extraídos, transformados em área de staging e então carregados. | Dados são extraídos, carregados no destino e transformados conforme a necessidade. |
 | **Localização da Transformação** | Área de preparação (Staging Area) separada. | Diretamente no sistema de destino (ex: BigQuery). |
@@ -23,7 +23,7 @@ A principal diferença reside na **ordem** em que as transformações ocorrem e 
 
 ---
 
-## 🗄️ Sistemas de Armazenamento: Warehouse vs Lake
+## Sistemas de Armazenamento: Warehouse vs Lake
 
 A escolha entre ETL e ELT geralmente dita o sistema de armazenamento ideal.
 
@@ -43,7 +43,7 @@ Um sistema que armazena grandes quantidades de dados brutos em seu formato origi
 
 ---
 
-## 🎯 Principais Conclusões
+## Principais Conclusões
 
 - **ETL** é a escolha clássica para ambientes onde a privacidade dos dados é rígida e o volume é controlado.
 - **ELT** é o padrão moderno para nuvem, aproveitando o poder de processamento massivo de ferramentas como o BigQuery para transformar dados em escala.
@@ -51,5 +51,5 @@ Um sistema que armazena grandes quantidades de dados brutos em seu formato origi
 
 ---
 <div align="center">
-  <sub>Documentação desenvolvida com base no curso de Modelagem de Dados e Pipelines de BI.</sub>
+ <sub>Documentação desenvolvida com base no curso de Modelagem de Dados e Pipelines de BI.</sub>
 </div>

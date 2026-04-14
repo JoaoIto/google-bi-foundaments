@@ -1,31 +1,31 @@
-# ✅ Testes de Qualidade em Banco de Dados (ETL)
+# Testes de Qualidade em Banco de Dados (ETL)
 
 No contexto de Business Intelligence, os dados percorrem um longo caminho desde a extração até a entrega de insights. O **Teste de Qualidade** é a etapa crítica dentro do processo de transformação no **ETL (Extract, Transform, Load)** que garante que os dados sejam confiáveis e úteis, prevenindo falhas no sistema e relatórios imprecisos.
 
 ---
 
-## 🏗️ O Fluxo de Qualidade no Pipeline ETL
+## O Fluxo de Qualidade no Pipeline ETL
 
 Os pontos de verificação de qualidade devem ser incorporados *antes* que os dados cheguem à tabela de destino (Stage area -> Target Table).
 
 ```mermaid
 graph LR
-    A[Origem dos Dados] --> B(Extração)
-    B --> C{Transformação}
-    subgraph "Camada de Qualidade"
-    C --> D[Limpeza]
-    D --> E[Validação / Testes]
-    E --> F[Mapeamento]
-    end
-    F --> G(Carga)
-    G --> H[(Banco de Dados de Destino / DW)]
-    
-    style E fill:#f9f,stroke:#333,stroke-width:4px
+ A[Origem dos Dados] --> B(Extração)
+ B --> C{Transformação}
+ subgraph "Camada de Qualidade"
+ C --> D[Limpeza]
+ D --> E[Validação / Testes]
+ E --> F[Mapeamento]
+ end
+ F --> G(Carga)
+ G --> H[(Banco de Dados de Destino / DW)]
+ 
+ style E fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ---
 
-## 🔍 Os 7 Elementos da Validação de Qualidade
+## Os 7 Elementos da Validação de Qualidade
 
 Para garantir que os dados sejam confiáveis, aplicamos sete critérios fundamentais:
 
@@ -41,7 +41,7 @@ Para garantir que os dados sejam confiáveis, aplicamos sete critérios fundamen
 
 ---
 
-## 🛠️ Detalhamento dos Critérios
+## Detalhamento dos Critérios
 
 ### 1. Completude (Completeness)
 Confirma se o conjunto de dados está totalizado. Se métricas importantes (como faturamento ou volume) estiverem faltando, todos os cálculos derivados (médias, somas, KPIs) estarão errados.
@@ -66,15 +66,15 @@ Dados obsoletos geram conclusões obsoletas. O pipeline deve ter verificações 
 
 ---
 
-## 🚀 Prática: Casos Reais com SQL
+## Prática: Casos Reais com SQL
 
 Para ver como aplicar esses 7 elementos em um cenário prático utilizando SQL e análise de esquemas, consulte nossa seção de testes detalhados:
 
-👉 **[Monitoramento de Qualidade com SQL (Cenário Francisco's Electronics)](./tests/readme.md)**
+ **[Monitoramento de Qualidade com SQL (Cenário Francisco's Electronics)](./tests/readme.md)**
 
 ---
 
-## 📋 Checklist de Problemas Comuns
+## Checklist de Problemas Comuns
 
 Evite falhas catastróficas verificando proativamente:
 

@@ -1,10 +1,10 @@
-# 🌦️ Estudo de Caso: Otimização no Serviço Meteorológico
+# Estudo de Caso: Otimização no Serviço Meteorológico
 
 Este estudo de caso explora como os cinco fatores de desempenho de banco de dados impactam os usuários na prática, utilizando o cenário de um serviço meteorológico em evolução.
 
 ---
 
-## 🔍 Cenário: O Sistema do Serviço Meteorológico
+## Cenário: O Sistema do Serviço Meteorológico
 
 Imagine o banco de dados de um serviço meteorológico projetado anos atrás. Naquela época, ele lidava apenas com consultas simples e infrequentes. 
 
@@ -16,7 +16,7 @@ Hoje, o sistema tem dificuldade em processar:
 
 ---
 
-## 🧩 Análise dos Fatores de Desempenho
+## Análise dos Fatores de Desempenho
 
 ### 1. Carga de Trabalho (Workload)
 **O Problema:** O estilo e a frequência das consultas mudaram drasticamente, tornando-se mais frequentes, robustas e dinâmicas.
@@ -41,6 +41,6 @@ Hoje, o sistema tem dificuldade em processar:
 
 ---
 
-## 🏆 Conclusão
+## Conclusão
 
 Este cenário demonstra que o desempenho do banco de dados não é estático. Ele requer um equilíbrio constante entre o hardware disponível (**Recursos**), a eficiência do design (**Otimização**) e a compreensão profunda do perfil de uso dos dados (**Carga de Trabalho**), visando sempre minimizar a **Contenção** e maximizar o **Throughput**.

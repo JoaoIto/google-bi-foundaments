@@ -6,9 +6,9 @@ Esta documentação detalha a atividade de validação de esquema de banco de da
 O esquema analisado possui 8 tabelas centrais: `Sales Fact`, `Shipments`, `Billing`, `Order Items`, `Product`, `Product Price`, `Order Details` e `Customer`.
 
 ### Critérios de Verificação (Refinados)
-1.  **Validade das Chaves**: Verificação de PKs (Chaves Primárias) e FKs (Chaves Estrangeiras).
-2.  **Consistência Técnica**: Foco em correspondência de dados e tipos de dados (bloqueadores reais de validação).
-3.  **Preservação de Relacionamentos**: Garantia de conexões lógicas entre tabelas de processo e granularidade.
+1. **Validade das Chaves**: Verificação de PKs (Chaves Primárias) e FKs (Chaves Estrangeiras).
+2. **Consistência Técnica**: Foco em correspondência de dados e tipos de dados (bloqueadores reais de validação).
+3. **Preservação de Relacionamentos**: Garantia de conexões lógicas entre tabelas de processo e granularidade.
 
 ---
 

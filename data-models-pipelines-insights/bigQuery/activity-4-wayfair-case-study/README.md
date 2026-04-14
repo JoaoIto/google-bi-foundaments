@@ -4,12 +4,12 @@ Este estudo de caso explora como a **Wayfair**, varejista global de artigos para
 
 ---
 
-## 🏬 Histórico da Empresa
+## Histórico da Empresa
 Fundada em 2002 por Niraj Shah e Steve Conine, a Wayfair evoluiu de centenas de sites de e-commerce nichados para uma plataforma unificada (Wayfair.com) em 2011. Hoje, é uma das maiores do mundo no setor, focada em ajudar os clientes a criar espaços que reflitam seus valores.
 
 ---
 
-## 🚩 O Desafio: Dados de Preços Fragmentados
+## O Desafio: Dados de Preços Fragmentados
 O ecossistema de preços da Wayfair é extremamente dinâmico:
 - **Milhares de entradas e saídas** mudando várias vezes ao dia.
 - **Fontes Heterogêneas:** Dados gerados por diferentes sistemas e em diferentes formatos.
@@ -23,7 +23,7 @@ O ecossistema de preços da Wayfair é extremamente dinâmico:
 
 ---
 
-## 🛠️ A Abordagem Colaborativa
+## A Abordagem Colaborativa
 A equipe de BI deu um passo atrás para entender a jornada do usuário e colaborou com quatro grupos fundamentais:
 
 | Stakeholder | Papel no Projeto |
@@ -35,7 +35,7 @@ A equipe de BI deu um passo atrás para entender a jornada do usuário e colabor
 
 ---
 
-## 🏆 Resultados e Benefícios
+## Resultados e Benefícios
 A implementação do novo sistema de pipeline atingiu objetivos revolucionários:
 - **Dados em Tempo Real:** Engenheiros agora publicam dados que podem ser consumidos instantaneamente.
 - **Unificação:** Consolidação de componentes de dados em um conjunto unificado, eliminando a necessidade de JOINS manuais e ad-hoc.
@@ -47,5 +47,5 @@ A resposta foi extremamente positiva. O diretor de análise da Wayfair descreveu
 
 ---
 
-## 🎯 Conclusão do Estudo
+## Conclusão do Estudo
 O sucesso do Business Intelligence não depende apenas da tecnologia, mas da **parceria e alinhamento** entre as equipes. Sem entender as necessidades reais das partes interessadas, os problemas técnicos até podem ser resolvidos, mas os problemas de negócio persistirão.

@@ -4,12 +4,12 @@ Esta atividade foca em um estágio crítico do pipeline de BI: a **Extração** 
 
 ---
 
-## 🏗️ Visão Geral
+## Visão Geral
 Como profissional de BI, você usa tabelas de destino como locais predeterminados para consolidar dados vindos de diversas fontes. Isso permite que a equipe de BI processe e limpe os dados antes de servirem como base para dashboards e tomadores de decisão.
 
 ---
 
-## 🚩 Cenário: Consultoria para o Gabinete do Prefeito de São Francisco
+## Cenário: Consultoria para o Gabinete do Prefeito de São Francisco
 O Prefeito de São Francisco planeja lançar um **Programa Anual de Valorização das Árvores**, que decorará as árvores das ruas da cidade. Para isso, o gabinete precisa de uma lista dos **10 principais endereços com maior densidade de árvores**.
 
 ### Objetivo do BI:
@@ -21,28 +21,28 @@ Disponível publicamente no BigQuery, este dataset contém mais de 190.000 linha
 
 ---
 
-## 🛠️ Passo a Passo da Execução
+## Passo a Passo da Execução
 
-1.  **Acesse o Console:** Abra o [BigQuery Studio](https://console.cloud.google.com/bigquery).
-2.  **Adicione Dados Públicos:**
-    - Clique em **`+ ADICIONAR`** no menu Explorer.
-    - Selecione **`Conjuntos de dados públicos`**.
-    - Pesquise por "San Francisco Street Trees" e selecione "View Dataset".
-3.  **Execute a Consulta:** Use o arquivo de consulta localizado em [`data/querySanFrancisco.sql`](./data/querySanFrancisco.sql).
-4.  **Salve os Resultados:** Após a execução, clique em **`SALVAR RESULTADOS`** e escolha **`CSV (arquivo local)`**.
+1. **Acesse o Console:** Abra o [BigQuery Studio](https://console.cloud.google.com/bigquery).
+2. **Adicione Dados Públicos:**
+ - Clique em **`+ ADICIONAR`** no menu Explorer.
+ - Selecione **`Conjuntos de dados públicos`**.
+ - Pesquise por "San Francisco Street Trees" e selecione "View Dataset".
+3. **Execute a Consulta:** Use o arquivo de consulta localizado em [`data/querySanFrancisco.sql`](./data/querySanFrancisco.sql).
+4. **Salve os Resultados:** Após a execução, clique em **`SALVAR RESULTADOS`** e escolha **`CSV (arquivo local)`**.
 
 ---
 
-## 📊 Análise da Consulta SQL
+## Análise da Consulta SQL
 
 ```sql
 SELECT
-    address,
-    COUNT(address) AS number_of_trees
+ address,
+ COUNT(address) AS number_of_trees
 FROM
-    `bigquery-public-data.san_francisco_trees.street_trees`
+ `bigquery-public-data.san_francisco_trees.street_trees`
 WHERE
-    address != "null"
+ address != "null"
 GROUP BY address
 ORDER BY number_of_trees DESC
 LIMIT 10;
@@ -56,16 +56,16 @@ LIMIT 10;
 
 ---
 
-## 🏁 Resultados e Recomendações de BI
+## Resultados e Recomendações de BI
 
 Os dados extraídos foram salvos no link abaixo:
-👉 **[Ver Resultados CSV (Exportados)](./data/bq-results-sanfrancisco-trees.csv)**
+ **[Ver Resultados CSV (Exportados)](./data/bq-results-sanfrancisco-trees.csv)**
 
 ### Próximos Passos (Estratégicos):
 Para agregar valor real ao trabalho do prefeito, um profissional de BI deve recomendar:
-1.  **Painel de Controle:** Visualização dos endereços com as árvores mais adequadas para decoração.
-2.  **Gerenciamento de Suprimentos:** Estimativa exata de materiais com base no `number_of_trees`.
-3.  **Logística Eficiente:** Planejamento de rotas de decoração e limpeza para otimizar o tempo das equipes urbanas.
+1. **Painel de Controle:** Visualização dos endereços com as árvores mais adequadas para decoração.
+2. **Gerenciamento de Suprimentos:** Estimativa exata de materiais com base no `number_of_trees`.
+3. **Logística Eficiente:** Planejamento de rotas de decoração e limpeza para otimizar o tempo das equipes urbanas.
 
 ---
 

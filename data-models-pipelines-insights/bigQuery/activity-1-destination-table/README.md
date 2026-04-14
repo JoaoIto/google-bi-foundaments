@@ -20,24 +20,24 @@ Abaixo está a consulta utilizada para gerar a tabela de destino:
 
 ```sql
 SELECT
-    address,
-    COUNT(address) AS number_of_trees
+ address,
+ COUNT(address) AS number_of_trees
 FROM
-    `bigquery-public-data.san_francisco_trees.street_trees`
+ `bigquery-public-data.san_francisco_trees.street_trees`
 WHERE
-    address != "null"
+ address != "null"
 GROUP BY address
 ORDER BY number_of_trees DESC
 LIMIT 10;
 ```
 
 ### Explicação Detalhada das Cláusulas:
-*   **SELECT & COUNT**: Selecionamos os endereços e usamos a função `COUNT(address)` para contar quantas árvores existem em cada um. Isso retorna uma única linha por endereço com o total calculado, em vez de uma linha por árvore. O resultado é renomeado para `number_of_trees`.
-*   **FROM**: Especifica a tabela de origem `street_trees` dentro do conjunto público do BigQuery (`bigquery-public-data.san_francisco_trees`).
-*   **WHERE**: Filtra os dados para garantir que a tabela de destino inclua apenas linhas que tenham um valor válido na coluna de endereço (`address != "null"`).
-*   **GROUP BY**: Essencial ao usar funções de agregação como `COUNT`. Agrupa os registros pelo endereço, garantindo que a contagem seja feita por local.
-*   **ORDER BY**: Organiza os resultados em ordem decrescente (`DESC`), trazendo os locais com maior densidade de árvores para o topo.
-*   **LIMIT**: Restringe o resultado aos 10 primeiros registros. Em grandes conjuntos de dados, isso economiza tempo de processamento e custos de consulta.
+* **SELECT & COUNT**: Selecionamos os endereços e usamos a função `COUNT(address)` para contar quantas árvores existem em cada um. Isso retorna uma única linha por endereço com o total calculado, em vez de uma linha por árvore. O resultado é renomeado para `number_of_trees`.
+* **FROM**: Especifica a tabela de origem `street_trees` dentro do conjunto público do BigQuery (`bigquery-public-data.san_francisco_trees`).
+* **WHERE**: Filtra os dados para garantir que a tabela de destino inclua apenas linhas que tenham um valor válido na coluna de endereço (`address != "null"`).
+* **GROUP BY**: Essencial ao usar funções de agregação como `COUNT`. Agrupa os registros pelo endereço, garantindo que a contagem seja feita por local.
+* **ORDER BY**: Organiza os resultados em ordem decrescente (`DESC`), trazendo os locais com maior densidade de árvores para o topo.
+* **LIMIT**: Restringe o resultado aos 10 primeiros registros. Em grandes conjuntos de dados, isso economiza tempo de processamento e custos de consulta.
 
 ---
 
@@ -45,11 +45,11 @@ LIMIT 10;
 Se a consulta for executada corretamente, os resultados devem corresponder aos dados armazenados em `bigQuery/data/dataBigQuery.csv`.
 
 **Top 5 Endereços:**
-1.  **100x Cargo Way**: 135 árvores
-2.  **700 Junipero Serra Blvd**: 125 árvores
-3.  **1000 San Jose Ave**: 113 árvores
-4.  **1200 Sunset Blvd**: 110 árvores
-5.  **1600 Sunset Blvd**: 102 árvores
+1. **100x Cargo Way**: 135 árvores
+2. **700 Junipero Serra Blvd**: 125 árvores
+3. **1000 San Jose Ave**: 113 árvores
+4. **1200 Sunset Blvd**: 110 árvores
+5. **1600 Sunset Blvd**: 102 árvores
 
 ---
 
@@ -57,10 +57,10 @@ Se a consulta for executada corretamente, os resultados devem corresponder aos d
 Para automatizar ou analisar esses dados de forma programática, você pode usar o script `bigquery_demo.ipynb` disponível nesta pasta.
 
 ### O que o script faz:
-1.  **Autenticação**: Conecta sua conta do Google ao ambiente do Colab.
-2.  **Extração**: Envia a consulta SQL para a API do BigQuery.
-3.  **Conversão**: Transforma os resultados em um DataFrame do Pandas para fácil manipulação.
-4.  **Visualização**: Gera um gráfico de barras horizontal com os dados obtidos.
+1. **Autenticação**: Conecta sua conta do Google ao ambiente do Colab.
+2. **Extração**: Envia a consulta SQL para a API do BigQuery.
+3. **Conversão**: Transforma os resultados em um DataFrame do Pandas para fácil manipulação.
+4. **Visualização**: Gera um gráfico de barras horizontal com os dados obtidos.
 
 ---
 > [!IMPORTANT]

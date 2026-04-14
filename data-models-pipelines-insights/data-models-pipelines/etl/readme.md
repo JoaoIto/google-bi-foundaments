@@ -11,19 +11,19 @@ O objetivo central do ETL é tornar os dados brutos úteis para análise, garant
 
 ### 1ª Fase: Extração (Extract)
 Nesta etapa, o pipeline acessa os sistemas de origem para ler e coletar os dados necessários.
-*   **Fontes comuns**: Bancos de dados transacionais (sistemas OLTP), arquivos simples (HTML, arquivos de log, CSV).
-*   **Ação**: Os dados extraídos são movidos para uma **tabela temporária de preparação** (*staging table*).
+* **Fontes comuns**: Bancos de dados transacionais (sistemas OLTP), arquivos simples (HTML, arquivos de log, CSV).
+* **Ação**: Os dados extraídos são movidos para uma **tabela temporária de preparação** (*staging table*).
 
 ### 2ª Fase: Transformação (Transform)
 As atividades de transformação preparam os dados para análise com base nos requisitos do negócio.
-*   **Validação e Limpeza**: Remoção de erros e inconsistências.
-*   **Mapeamento**: O pipeline garante que os tipos de dados da fonte se ajustem às convenções e esquemas do destino.
-*   **Destaque**: É aqui que o profissional de BI garante a integridade dos dados antes que cheguem ao sistema final. Veja mais em [Testes de Qualidade de Dados](../../quality-tests/readme.md).
+* **Validação e Limpeza**: Remoção de erros e inconsistências.
+* **Mapeamento**: O pipeline garante que os tipos de dados da fonte se ajustem às convenções e esquemas do destino.
+* **Destaque**: É aqui que o profissional de BI garante a integridade dos dados antes que cheguem ao sistema final. Veja mais em [Testes de Qualidade de Dados](../../quality-tests/readme.md).
 
 ### 3ª Fase: Carregamento (Load)
 É o estágio final, onde os dados são entregues ao destino desejado.
-*   **Destinos comuns**: *Data Warehouse*, *Data Lake* ou plataformas de análise com feeds diretos.
-*   **Persistência**: Uma vez carregados, os dados podem existir em vários formatos (como tabelas de instantâneos semanais ou arquivos históricos maiores).
+* **Destinos comuns**: *Data Warehouse*, *Data Lake* ou plataformas de análise com feeds diretos.
+* **Persistência**: Uma vez carregados, os dados podem existir em vários formatos (como tabelas de instantâneos semanais ou arquivos históricos maiores).
 
 ---
 

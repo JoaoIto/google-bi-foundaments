@@ -1,20 +1,20 @@
-# 🧐 Estudo de Caso: Avaliação de Esquema (Sales Fact)
+# Estudo de Caso: Avaliação de Esquema (Sales Fact)
 
 Neste estudo de caso, analisamos um esquema de Data Warehouse com foco em uma tabela central de fatos e suas dimensões, identificando falhas de relacionamento e aplicando correções estruturais.
 
 ---
 
-## 🏗️ O Esquema Original (Com Erros)
+## O Esquema Original (Com Erros)
 
 O esquema original continha oito tabelas: **Sales Fact**, **Shipments**, **Billing**, **Order Items**, **Product**, **Product Price**, **Order Details** e **Customer**. 
 
 Entretanto, uma análise técnica revelou problemas críticos:
-1.  **Tabela Customer Isolada**: A tabela `Customer` não possuía nenhum vínculo com as outras tabelas. Isso impede análises por tipo de cliente ou nome.
-2.  **Shipments Desconectado**: A tabela `Shipments` não estava conectada à `Order Items` via `order_sid`, impossibilitando o rastreio de quais itens foram enviados.
+1. **Tabela Customer Isolada**: A tabela `Customer` não possuía nenhum vínculo com as outras tabelas. Isso impede análises por tipo de cliente ou nome.
+2. **Shipments Desconectado**: A tabela `Shipments` não estava conectada à `Order Items` via `order_sid`, impossibilitando o rastreio de quais itens foram enviados.
 
 ---
 
-## ✅ O Esquema Ideal (Corrigido)
+## O Esquema Ideal (Corrigido)
 
 Abaixo, apresentamos a versão ideal do esquema, onde as chaves e os relacionamentos foram devidamente preservados e validados.
 
@@ -27,7 +27,7 @@ Abaixo, apresentamos a versão ideal do esquema, onde as chaves e os relacioname
 
 ---
 
-## 🔗 Mapeamento de Dimensões (SIDs)
+## Mapeamento de Dimensões (SIDs)
 
 As dimensões críticas que garantem a integridade deste esquema são:
 
@@ -41,7 +41,7 @@ As dimensões críticas que garantem a integridade deste esquema são:
 
 ---
 
-## 💡 Conclusão
+## Conclusão
 
 A avaliação proativa de esquemas evita falhas catastróficas em sistemas de BI. Ao garantir que as chaves sejam válidas e os relacionamentos preservados *antes* da carga de dados, economizamos tempo e recursos que seriam gastos em correções manuais posteriores.
 

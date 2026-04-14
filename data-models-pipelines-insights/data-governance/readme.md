@@ -1,4 +1,4 @@
-# 🛡️ Governança de Dados: Dicionário e Linhagem
+# Governança de Dados: Dicionário e Linhagem
 
 Para garantir a conformidade dos dados desde a origem até o destino final (Single Source of Truth), os profissionais de Business Intelligence utilizam três ferramentas fundamentais: **Validação de Esquema**, **Dicionários de Dados** e **Linhagem de Dados**.
 
@@ -15,7 +15,7 @@ Para garantir a conformidade dos dados desde a origem até o destino final (Sing
 
 ---
 
-## 📖 2. Dicionários de Dados (Repositório de Metadados)
+## 2. Dicionários de Dados (Repositório de Metadados)
 
 Um **Dicionário de Dados** é uma coleção de informações que descreve o conteúdo, o formato e a estrutura dos objetos em um banco de dados. Ele usa **metadados** (dados sobre dados) para definir a origem e o uso de cada campo.
 
@@ -43,34 +43,34 @@ Para garantir que novos dados mantenham esse padrão, utilizamos o **Dicionário
 
 ---
 
-## ⛓️ 3. Linhagem de Dados (Data Lineage)
+## 3. Linhagem de Dados (Data Lineage)
 
 A **Linhagem de Dados** descreve o processo de identificação da origem dos dados, para onde eles se deslocaram no sistema e como se transformaram ao longo do tempo.
 
 ```mermaid
 graph LR
-    subgraph "Sistemas de Origem"
-    A[(DB Escola A)]
-    B[(DB Escola B)]
-    C[(Planilha Nacional)]
-    end
+ subgraph "Sistemas de Origem"
+ A[(DB Escola A)]
+ B[(DB Escola B)]
+ C[(Planilha Nacional)]
+ end
 
-    subgraph "Processamento ETL"
-    D{Limpeza}
-    E{Transformação / Tipagem}
-    end
+ subgraph "Processamento ETL"
+ D{Limpeza}
+ E{Transformação / Tipagem}
+ end
 
-    subgraph "Destino Final (BI)"
-    F[(Data Warehouse)]
-    end
+ subgraph "Destino Final (BI)"
+ F[(Data Warehouse)]
+ end
 
-    A --> D
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    
-    style E fill:#f9f,stroke:#333,stroke-width:2px
+ A --> D
+ B --> D
+ C --> D
+ D --> E
+ E --> F
+ 
+ style E fill:#f9f,stroke:#333,stroke-width:2px
 ```
 
 ### Por que a linhagem é útil?
@@ -78,7 +78,7 @@ Se um dashboard exibe uma média de notas errada, o profissional de BI usa a lin
 
 ---
 
-## 🎓 Estudo de Caso: Governança em Organização Educacional
+## Estudo de Caso: Governança em Organização Educacional
 
 Uma ONG educacional ingere dados de diversas escolas para medir o desempenho estudantil. Eles enfrentaram um erro na coluna **Idade**, que deveria ser um número inteiro.
 
@@ -89,16 +89,16 @@ Uma ONG educacional ingere dados de diversas escolas para medir o desempenho est
 
 ---
 
-## ✅ Checklists de Verificação
+## Checklists de Verificação
 
 Para garantir a integridade total dos seus sistemas de BI, consulte as listas detalhadas:
 
-1.  👉 **[Validação de Esquema e Chaves (Sales Fact)](./list-verifications/readme.md)**
-2.  👉 **[Regras de Negócio e Lógica Operacional](./business-rules/README.md)**
+1. **[Validação de Esquema e Chaves (Sales Fact)](./list-verifications/readme.md)**
+2. **[Regras de Negócio e Lógica Operacional](./business-rules/README.md)**
 
 ---
 
-## 💡 Principais Conclusões
+## Principais Conclusões
 
 - **Dicionários** garantem que todos falem a mesma língua (padrões de dados).
 - **Linhagem** permite rastreabilidade e auditoria (confiança no dado).

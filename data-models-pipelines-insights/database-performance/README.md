@@ -1,4 +1,4 @@
-# 🚀 Otimização e Desempenho de Banco de Dados
+# Otimização e Desempenho de Banco de Dados
 
 ## 1. Introdução
 
@@ -30,9 +30,9 @@ Para ilustrar esses fatores de forma mais tangível, usaremos um cenário onde *
 
 A compreensão dos cinco fatores é o primeiro passo. Para garantir que um banco de dados de BI seja sustentável a longo prazo, é necessário dominar as ferramentas técnicas de intervenção.
 
-👉 **[Explorar Métodos e Técnicas de Otimização de Leitura (Índices, Partições, Cache e Consultas)](./optimization-techniques/README.md)**
+ **[Explorar Métodos e Técnicas de Otimização de Leitura (Índices, Partições, Cache e Consultas)](./optimization-techniques/README.md)**
 
-👉 **[Estudo de Caso: Otimização no Serviço Meteorológico (Aplicação Prática)](./case-study.md)**
+ **[Estudo de Caso: Otimização no Serviço Meteorológico (Aplicação Prática)](./case-study.md)**
 
 ---
 

@@ -1,4 +1,4 @@
-# 🏗️ ModelagemDimensional e Arquitetura de Dados: Aplicação Prática
+# ModelagemDimensional e Arquitetura de Dados: Aplicação Prática
 
 Esta seção documenta a transição dos requisitos de negócio (Parte 1) para a estrutura técnica de dados (Parte 2). O objetivo é construir um Data Warehouse robusto para o cenário da Google Fiber, utilizando os princípios de modelagem dimensional.
 
@@ -6,10 +6,10 @@ Esta seção documenta a transição dos requisitos de negócio (Parte 1) para a
 
 A criação deste Data Warehouse segue rigorosamente os quatro elementos-chave para a validação e utilidade dos dados:
 
-1.  **Definição de Dados Relevantes:** O modelo foca exclusivamente nos dados necessários para responder às perguntas de negócio definidas na Parte 1, eliminando ruídos e otimizando o armazenamento.
-2.  **Tipagem Estrita e Nomenclatura:** Adotou-se a convenção de nomenclatura `snake_case` (ex: `order_id`) por ser um padrão de mercado que melhora a legibilidade e consistência. Cada coluna possui um tipo de dado técnico definido (ex: `INTEGER`, `TIMESTAMP`, `STRING`) para garantir a integridade.
-3.  **Formatação Consistente:** O esquema impõe regras de validação para garantir que cada entrada de dados seja uma instância fiel do modelo, essencial para a precisão das ferramentas de visualização.
-4.  **Integridade Referencial via Chaves:** O modelo utiliza **Chaves Primárias (PK)** para identificação única de registros e **Chaves Estrangeiras (FK)** para estabelecer conexões confiáveis entre as tabelas.
+1. **Definição de Dados Relevantes:** O modelo foca exclusivamente nos dados necessários para responder às perguntas de negócio definidas na Parte 1, eliminando ruídos e otimizando o armazenamento.
+2. **Tipagem Estrita e Nomenclatura:** Adotou-se a convenção de nomenclatura `snake_case` (ex: `order_id`) por ser um padrão de mercado que melhora a legibilidade e consistência. Cada coluna possui um tipo de dado técnico definido (ex: `INTEGER`, `TIMESTAMP`, `STRING`) para garantir a integridade.
+3. **Formatação Consistente:** O esquema impõe regras de validação para garantir que cada entrada de dados seja uma instância fiel do modelo, essencial para a precisão das ferramentas de visualização.
+4. **Integridade Referencial via Chaves:** O modelo utiliza **Chaves Primárias (PK)** para identificação única de registros e **Chaves Estrangeiras (FK)** para estabelecer conexões confiáveis entre as tabelas.
 
 ---
 
@@ -35,11 +35,11 @@ O mapeamento de chaves da tabela central `Sales` exemplifica como a integridade 
 
 Nesta fase, aplicamos os conceitos acima para modelar os dados de chamados de suporte da Google Fiber. O objetivo é criar um esquema que permita analisar e reduzir o volume de chamadas repetidas.
 
-### 🌟 Escolha da Arquitetura: Esquema em Estrela
+### Escolha da Arquitetura: Esquema em Estrela
 
 Assim como no caso de referência, foi adotado o **Esquema em Estrela**. Esta arquitetura centraliza a tabela de **Fatos** (o evento do chamado) e a conecta a tabelas de **Dimensão** (os contextos do evento). Esta abordagem facilita as consultas complexas e agregações necessárias para os dashboards definidos na Parte 1.
 
-### 📊 Diagrama de Entidade-Relacionamento (ERD) e Dicionário Técnico
+### Diagrama de Entidade-Relacionamento (ERD) e Dicionário Técnico
 
 O diagrama abaixo visualiza as tabelas, colunas, chaves e relacionamentos do banco de dados `fiber_support_warehouse`.
 

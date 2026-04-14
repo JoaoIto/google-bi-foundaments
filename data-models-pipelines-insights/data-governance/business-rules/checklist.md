@@ -1,10 +1,10 @@
-# ✅ Checklist: Verificação de Regras de Negócio
+# Checklist: Verificação de Regras de Negócio
 
 Utilize esta lista para garantir que os dados de entrada respeitem a lógica operacional da organização antes de serem carregados no Data Warehouse.
 
 ---
 
-## 📋 Lista de Verificação
+## Lista de Verificação
 
 ### 1. Integridade de Datas e Prazos
 - [ ] **Coerência Cronológica**: As datas de entrega/envio são posteriores às datas de pedido?
@@ -24,12 +24,12 @@ Utilize esta lista para garantir que os dados de entrada respeitem a lógica ope
 
 ---
 
-## 🛠️ Como aplicar esta verificação?
+## Como aplicar esta verificação?
 
-1.  **Entenda o Negócio**: Reúna-se com as partes interessadas para documentar o que *pode* e o que *não pode* acontecer nos dados.
-2.  **Mapeie as Regras**: Transforme as políticas da empresa em restrições lógicas.
-3.  **Teste na Ingestão**: Configure o pipeline (ETL/ELT) para sinalizar ou rejeitar dados que violem estas condições.
-4.  **Monitore Mudanças**: Regras de negócio mudam. Revise este checklist trimestralmente ou conforme novas políticas forem implementadas.
+1. **Entenda o Negócio**: Reúna-se com as partes interessadas para documentar o que *pode* e o que *não pode* acontecer nos dados.
+2. **Mapeie as Regras**: Transforme as políticas da empresa em restrições lógicas.
+3. **Teste na Ingestão**: Configure o pipeline (ETL/ELT) para sinalizar ou rejeitar dados que violem estas condições.
+4. **Monitore Mudanças**: Regras de negócio mudam. Revise este checklist trimestralmente ou conforme novas políticas forem implementadas.
 
 ---
 > [!TIP]
