@@ -85,7 +85,20 @@ A tabela gerada aqui será a fonte de dados primária para o desenvolvimento do 
 
 ---
 
-## ✅ Checklist de Autoavaliação (Rubrica de 10 Pontos)
+## 🏆 Resultados Finais
+
+Após a execução do pipeline de dados, a tabela de relatório final foi gerada com sucesso, garantindo que todos os dados estejam limpos, tipados corretamente (INTEGER) e consolidados.
+
+### Esquema da Tabela Final (BigQuery)
+Abaixo, a estrutura final da tabela `google_fiber_final_reporting_table`, pronta para exportação:
+
+![Esquema Final no BigQuery](./assets/finalTable.png)
+
+### Exportação para Tableau
+O dataset consolidado e pronto para a criação do dashboard no Tableau pode ser acessado aqui:
+👉 **[Baixar results.csv](./data/results.csv)**
+
+---
 
 Utilize este checklist para garantir que você concluiu todas as etapas necessárias para sua nota máxima:
 
