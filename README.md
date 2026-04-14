@@ -1,10 +1,19 @@
 # Google Business Intelligence Professional Certificate
 
 <div align="center">
- <a href="https://coursera.org/verify/O3KJO7CXWBTA">
- <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/google-fiber-bi/assets/certificado.png?raw=true" alt="Certificado - Foundations of Business Intelligence (Google / Coursera)" width="600">
- </a>
- <p><i>Repositório Oficial de Estudos e Portfólio - Desenvolvido por <b>João Victor Póvoa França</b></i></p>
+  <table style="border: none; border-collapse: collapse;">
+    <tr style="border: none;">
+      <td style="border: none; padding: 10px;">
+        <a href="https://coursera.org/verify/O3KJO7CXWBTA">
+          <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/foundaments-bi/assets/certificado.png?raw=true" alt="Certificado 1" width="400">
+        </a>
+      </td>
+      <td style="border: none; padding: 10px;">
+        <img src="https://github.com/JoaoIto/google-bi-foundaments/blob/main/data-models-pipelines-insights/assets/certificado2.png?raw=true" alt="Certificado 2" width="400">
+      </td>
+    </tr>
+  </table>
+  <p><i>Repositório Oficial de Estudos e Portfólio - Desenvolvido por <b>João Victor Póvoa França</b></i></p>
 </div>
 
 ---
@@ -27,8 +36,9 @@ Neste primeiro módulo, atuamos como um analista de BI em uma simulação para a
 
 ### 2 Curso 2: Modelagem de Dados, Pipelines e Insights
 O segundo módulo aprofunda-se na engenharia dos dados. Foca em como planejar bancos de dados e aplicar *Design Patterns* de BI (como Esquema Estrela e Floco de Neve) para tornar o armazenamento otimizado para consultas analíticas pesadas.
-* **Status:** Em Progresso
-* **Documentação Atual:** Introdução aos Design Patterns e Schemas.
+* **Status:** Concluído
+* **Projeto Principal:** Ingestão e Preparação de Dados (BigQuery/SQL).
+* **[Acessar Projeto Final: Google Fiber](./data-models-pipelines-insights/final-project-google-fiber/Readme.md)**
 * **[Acessar a Documentação Técnica](./data-models-pipelines-insights/README.md)**
 
 ---
